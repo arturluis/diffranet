@@ -21,7 +21,7 @@ Our implementation of the SIFT feature extractor relies on the OpenCV library wi
 
 ## Downloading DiffraNet
 
-To download DiffraNet, simply follow [this link](TBD) and extract the downloaded file. DiffraNet already comes split in training/validation/test sets, as described in [our paper](TBD).
+To download DiffraNet, simply follow [this link](TBD) and extract the downloaded file. DiffraNet already comes split in training/validation/test sets, as described in [our paper](TBD). By default, our models assume that data is stored in the ```data/``` folder, this can be changed using the ```--train_path``` and ```--val_path``` arguments.
 
 ## Running the models
 
