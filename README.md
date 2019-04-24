@@ -1,15 +1,58 @@
 # DiffraNet: Automatic Classification of Serial Crystallography Diffraction Patterns
 
-Implementation of the models for diffraction image classification used in our ICLR paper. Also, the implementations used to optimize each of the models.
+Implementation of the models for diffraction image classification used in our [deepfreak paper](TBD).
 
-## summary
+## Summary
 
-?
+Work summary. Add blog.
 
-## Wiki
+## Installation guide
 
-See the wiki for a quick start guide: https://TODO
+Our models were implemented with Python3 and a set of Python libraries. We recommend using pip to install the dependencies of the project.
 
-## Blog
+```
+pip install -r requirements.txt
+```
 
-See our [blog post](https://TODO) for details on our work.
+### OpenCV
+
+Our implementation of the SIFT feature extractor relies on the OpenCV library with patented packages support. To install OpenCV, we recommend following the instructions [here](https://www.pyimagesearch.com/opencv-tutorials-resources-guides/). This is only necessary for our Hyperopt AutoML optimization (```hyperopt_search.py```).
+
+
+## Downloading DiffraNet
+
+To download DiffraNet, simply follow [this link](TBD) and extract the downloaded file. DiffraNet already comes split in training/validation/test sets, as described in [our paper](TBD).
+
+## Running the models
+
+Most of our models come with preset defaults that allow them to be run with a direct python3 command:
+
+```
+python3 deepfreak.py
+```
+
+All of the models also accept a set of arguments that allow the user to customize the models or apply them to a different dataset. To see the list of available parameters, use the --help argument:
+
+```
+python3 deepfreak.py --help
+```
+
+### Running BOHB
+
+The exception to this rule is BOHB. BOHB operates on a distributed setup and requires both a dispatcher and workers to function. To run BOHB, first instantiate a dispatcher:
+
+```
+python3 bohb_main.py
+```
+
+Then create a worker with:
+
+```
+python3 bohb_main.py --worker --worker_id 0
+```
+
+Multiple workers can be run in parallel by running the previous command with different worker_ids. We refer to [BOHB's documentation](https://automl.github.io/HpBandSter/build/html/index.html) for detailed information on BOHB.
+
+## References
+
+TBD
