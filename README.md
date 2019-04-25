@@ -1,10 +1,8 @@
 # DiffraNet: Automatic Classification of Serial Crystallography Diffraction Patterns
 
-Implementation of the models for diffraction image classification used in our [deepfreak paper](TBD).
-
 ## Summary
 
-Work summary. Add blog.
+This repo contains the implementation of a suite of classification and AutoML models for DiffraNet. Details about DiffraNet the models implemented here can be found in [our paper](TBD) and [DiffraNet page](TBD).
 
 ## Installation guide
 
