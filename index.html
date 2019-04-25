@@ -13,33 +13,86 @@
     <div class="wrapper">
       <header>
         <!--<h1>Snorkel</h1>-->
+        <img src="fig/temp_logo.png" width="150" />
         <p>
-          Automated Crystallography
+            A serial crystallography dataset for developing machine learning models
+        </p>
+        <p class="view">
+          <a href="https://github.com/HazyResearch/snorkel">View the Project on GitHub</a>
         </p>
 
         <ul>
           <li>
-            <a href="TODO">Download Data<strong>ZIP File</strong></a>
+            <a href="https://github.com/arturluis/diffranet">View On <strong>GitHub</strong></a>
           </li>
           <li>
-            <a href="https://github.com/arturluis/diffranet">View On <strong>GitHub</strong></a>
+            <a href="TODO">Download<strong>ZIP File</strong></a>
+          </li>
+          <li>
+            <a href="https://github.com/arturluis/diffranet">Read Our <strong>Blog Post</strong></a>
           </li>
         </ul>
       </header>
 <section>
 
 <h2>
-<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DiffraNet: Automatic Classification of Serial Crystallography Diffraction Patterns</h2>
+<a id="motivation" class="anchor" href="#motivation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>DiffraNet: A Dataset of Serial Crystallography Diffraction Patterns</h2>
 
 <p>
-Add project description
+DiffraNet is a dataset of serial crystallography diffraction patterns <strong> combining over 25000 real and synthetic images.</strong> 
 </p>
 
+<p>
+Crystallography is the science that studies the properties of crystals. It has been a central tool in many disciplines, including chemistry, geology, biology, materials science, metallurgy, and physics, and has led to substantial advances in, for instance, drugs development for fighting diseases. In crystallography, a crystal is irradiated with an X-ray beam that strikes the crystal and produces an image with a diffraction pattern (Figure 1, see this video for more information on crystal diffraction). This diffraction pattern is then used to analyze the crystal’s structure. Serial Crystallography, in turn, refers to a more recent crystallography technique for investigating properties from microcrystals using X-ray free-electron laser.
+</p>
+        
+<img align:right src="fig/crystallography_example.png" width=800px /><br />
+        
+<p>
+Recent technological advances have automated crystallography experiments, allowing researchers to generate diffraction images at unprecedented speeds. However, no automated system currently exists to provide real-time analysis of the diffraction images produced, so scientists that have been specifically trained to understand these diffraction patterns have to screen the images manually. This process is not only error-prone but also has the effect of slowing down the overall discovery process. We provide DiffraNet so that researchers can develop automated classification models and accelerate the serial crystallography experimentation pipeline.
+</p>
 
+<h2>
+  <a id="dataset" class="anchor" href="#dataset" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>The DiffraNet Dataset
+</h2>
+  
+<p>
+  DiffraNet is a dataset of serial crystallography diffraction patterns. DiffraNet is composed of 25,000 synthetic and 457 real 512x512 grayscale labeled images. The synthetic images are divided into five classes. Two classes denote images with no diffraction patterns (an undesired outcome) and the other three denote images with varying degrees of diffraction. The real images are divided into two classes, representing images with and without diffraction patterns. DiffraNet contains two variants for the real images: one with the raw images and another with the images preprocessed to make the patterns more visible.
+</p>
+<img src="fig/dataset.png" width="650" height="300" align="middle" /><br />
+
+<p>
+  DiffraNet will be continually expanded. In future iterations of the DiffraNet dataset we plan to add new images and new classes that are common place in serial crystallography. For more details on DiffraNet, we refer to <a href="TODO">our paper.</a>
+</p>
+
+<h2>
+  <a id="models" class="anchor" href="#models" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Baseline Models
+</h2>
+
+<p>
+  Together with DiffraNet, we also provide a suite of baseline models. Our models include standard feature extraction algorithms associated with Random Forests and Support Vector Machines and a novel CNN topology dubbed DeepFreak tailored to DiffraNet. The models were optimized using off-the-shelf AutoML tools. The code for the models and AutoML optimization can be found in our <a href="https://github.com/HazyResearch/snorkel">GitHub repository</a>.
+</p>
+
+<img src="fig/synthetic_results.png" width="650" height="300" align="middle" /><br />
+
+
+<h2>
+  <a id="references" class="anchor" href="#references" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>References
+</h2>
+
+<p>
+TBD
+</p>
 
 </section>
 
 <footer>
+  <p><small>
+   This project is a collaboration between: 
+   <br /><a href="https://www.stanford.edu/">Stanford University</a>
+   <br /><a href="https://www.ufmg.br/">Universidade Federal de Minas Gerais</a>
+   <br /><a href="https://www6.slac.stanford.edu/">SLAC National Accelerator Laboratory</a>
+  </small></p>
   <p>
     <small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small>
   </p>
