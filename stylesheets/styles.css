@@ -248,6 +248,19 @@ footer {
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
+ul {
+  padding: 15px;
+}
+
+p + ul {
+  margin-top: -20px;
+}
+
+ul + img {
+  margin-top: -15px;
+}
+
+
 @media print, screen and (max-width: 960px) {
 
   div.wrapper {
