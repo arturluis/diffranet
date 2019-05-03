@@ -2,7 +2,7 @@
 
 ## Summary
 
-This repo contains the implementation of a suite of classification and AutoML models for DiffraNet. Details about DiffraNet the models implemented here can be found in [our paper](TBD) and [DiffraNet page]([TBD](https://arturluis.github.io/diffranet/)).
+This repo contains the implementation of a suite of classification and AutoML models for DiffraNet. Details about DiffraNet the models implemented here can be found in [our paper](https://arxiv.org/abs/1904.11834) and [DiffraNet page](https://arturluis.github.io/diffranet/).
 
 ## Installation guide
 
@@ -19,7 +19,7 @@ Our implementation of the SIFT feature extractor relies on the OpenCV library wi
 
 ## Downloading DiffraNet
 
-To download DiffraNet, simply follow [this link](https://www.dcc.ufmg.br/~arturluis/diffranet/diffranet.zip) and extract the downloaded file. DiffraNet already comes split in training/validation/test sets, as described in [our paper](TBD). By default, our models assume that data is stored in the ```data/``` folder, this can be changed using the ```--train_path``` and ```--val_path``` arguments.
+To download DiffraNet, simply follow [this link](https://www.dcc.ufmg.br/~arturluis/diffranet/diffranet.zip) and extract the downloaded file. DiffraNet already comes split in training/validation/test sets, as described in [our paper](https://arxiv.org/abs/1904.11834). By default, our models assume that data is stored in the ```data/``` folder, this can be changed using the ```--train_path``` and ```--val_path``` arguments.
 
 ## Running the models
 
