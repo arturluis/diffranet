@@ -2,7 +2,7 @@ cloudpickle==0.8.1
 ConfigSpace==0.4.6
 cycler==0.10.0
 Cython==0.29.7
-dask==1.2.0
+dask==2021.10.0
 decorator==4.4.0
 future==0.17.1
 hpbandster==0.7.0
