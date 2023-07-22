@@ -28,7 +28,7 @@ serpent==1.28
 six==1.12.0
 statsmodels==0.9.0
 toolz==0.9.0
-torch==0.4.0a0+200fb22
+torch==1.13.1
 torchvision==0.2.1
 tqdm==4.31.1
 typing==3.6.6
